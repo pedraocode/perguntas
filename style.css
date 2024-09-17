@@ -38,10 +38,10 @@ a {
 }
 
 .line {
-    width: calc(100% - 80px); /* Isso já diminui 40px de cada lado */
+    width: calc(100% - 80px); 
     border-bottom: 1px solid rgb(55, 65, 82);
     margin-left: 40px;
-    margin-right: 40px; /* Define a margem direita correta */
+    margin-right: 40px; 
 }
 
 .coluns {
@@ -55,7 +55,7 @@ a {
 .primeiro, .segundo, .terceiro {
     flex: 1;
     padding: 20px;
-    min-width: 300px; /* Garante que os blocos tenham uma largura mínima */
+    min-width: 300px; 
 }
 
 h3 {
@@ -66,7 +66,7 @@ ul {
     padding-left: 20px;
 }
 
-/* Estilos responsivos */
+
 
 @media (max-width: 768px) {
     .coluns {
@@ -82,59 +82,14 @@ ul {
     
     .line {
         margin-left: 0;
-        margin-right: 0; /* Remove a margem direita para ajuste */
-        width: calc(100% - 40px); /* Reduz a largura em 20px de cada lado */
-    }
-}
-
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.25rem;
-    }
-
-    h3 {
-        font-size: 0.85rem;
-    }
-
-    p {
-        font-size: 0.85rem;
-    }
-    .line {
-        margin-left: 0;
-        margin-right: 0; /* Remove a margem direita para ajuste */
-        width: calc(100% - 40px); /* Reduz a largura em 20px de cada lado */
-    }
-    .primeiro, .segundo, .terceiro {
-        width: 100%;
-        padding: 5px;
-    }
-}
-@media (max-width: 768px) {
-    h1, .ok {
-        text-align: left; /* Alinha o h1 e o parágrafo à esquerda */
-    }
-
-    .coluns {
-        flex-direction: column;
-        padding: 0 10px;
-        align-items: flex-start;
-    }
-
-    .primeiro, .segundo, .terceiro {
-        width: 100%;
-        padding: 10px;
-    }
-    
-    .line {
-        margin-left: 20px;
-        margin-right: 20px; /* Reduz a largura em 20px de cada lado */
-        width: calc(100% - 40px); /* Ajusta a largura */
+        margin-right: 0; 
+        width: calc(100% - 40px); 
     }
 }
 
 @media (max-width: 480px) {
     h1, .ok {
-        text-align: left; /* Alinha o h1 e o parágrafo à esquerda */
+        text-align: left; 
     }
 
     h1 {
@@ -151,8 +106,8 @@ ul {
 
     .line {
         margin-left: 20px;
-        margin-right: 20px; /* Ajuste da margem para reduzir a largura */
-        width: calc(100% - 40px); /* Reduz a largura em 20px de cada lado */
+        margin-right: 20px; 
+        width: calc(100% - 40px); 
     }
 
     .primeiro, .segundo, .terceiro {
@@ -160,3 +115,26 @@ ul {
         padding: 5px;
     }
 }
+@media (max-width: 768px) {
+    h1, .ok {
+        text-align: left; 
+    }
+
+    .coluns {
+        flex-direction: column;
+        padding: 0 10px;
+        align-items: flex-start;
+    }
+
+    .primeiro, .segundo, .terceiro {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .line {
+        margin-left: 20px;
+        margin-right: 20px; 
+        width: calc(100% - 40px); 
+    }
+}
+
